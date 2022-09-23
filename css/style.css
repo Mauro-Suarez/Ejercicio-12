@@ -1,0 +1,61 @@
+/*el body tiene 2 columnas, la 2da para el reloj en el aside. tambien de establece el estilo de la imagen de fondo en el body*/
+body {
+    background-image: url('../img/fondo.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* div ubicado en la 1er columna, con height grande para que se pueda desplazar hacia abajo la pantalla*/
+div {
+    grid-column: 1;
+    height: 100em;
+}
+
+/*el boton del reloj es visible por defecto*/
+#boton_reloj {
+    visibility: visible;
+    margin-bottom: 2px;
+}
+
+/*estilo con que se muestra la palabra RELOJ*/
+p {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+    margin: 0 0 15px 0;
+}
+
+/*estilo de como se muestra la hora*/
+#reloj {
+    color: blue;
+    background-color: beige;
+    text-align: center;
+    font-size: x-large;
+    width: 5em;
+}
+
+/*estilo del formulario que contine el reloj y boton y como se mantiene en pantalla*/
+form {
+    position: fixed;
+    background-color: aquamarine;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    padding: 5px;
+}
+
+/*estilo del aside para ubicarlo en la 2da columna*/
+aside {
+    grid-column: 2;
+    margin: 5px;
+}
